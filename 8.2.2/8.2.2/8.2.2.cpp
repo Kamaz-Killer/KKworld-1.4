@@ -75,38 +75,7 @@ int currentRoomX = 1, currentRoomY = 1;
 int steps = 0;
 int gold = 0;
 int health = 100;
-int keys = 0;
-int visitedRooms = 1;
-int totalRooms = 0;
-bool uiExpanded = true;
-bool godMode = false;
-
-// Камера плавная
-float cameraX = 0.0f;
-float cameraY = 0.0f;
-
-// Враг
-Enemy enemy;
-int enemySpawnCounter = 0;
-const int ENEMY_SPAWN_DELAY = 300; // Спавнится через 300 фреймов
-
-HDC hdcBuffer = nullptr;
-HBITMAP hbmBuffer = nullptr;
-int bufferWidth = 0;
-int bufferHeight = 0;
-
-
-void GenerateMap();
-void GenerateRoom(int roomX, int roomY);
-void EnsurePlayerPath();
-void ConnectRooms();
-void EnsureAllRoomsConnected();
-void PlaceDoors();
-void PlaceDoorsInRoom(int roomX, int roomY);
-void PlaceGoldAndItems();
-void SpawnPlayer();
-void ChangeRoom(int dx, int dy);
-POINT FindPlayer();
+int ke
 void DrawMap(HDC hdc);
 void DrawUI(HDC hdc);
 void DrawMenu(HDC hdc);
